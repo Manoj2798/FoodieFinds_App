@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
+const path = require('path');
 let { open } = require('sqlite');
 const { resolve } = require('path');
 
@@ -13,7 +14,7 @@ let db;
 
 (async () => {
   db = await open({
-    filename: './database.sqlite',
+    filename: path.join(__dirname, 'database.sqlite'),
     driver: sqlite3.Database,
   });
 })();
