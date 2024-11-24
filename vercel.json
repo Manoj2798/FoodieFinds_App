@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "./BD4_Assignment1/index.js", "use": "@vercel/node" }],
   "rewrites": [
-    { "source": "/(.*)", "destination": "index.js" }
+    { "source": "/(.*)", "destination": "./BD4_Assignment1/index.js" }
   ]
 }
